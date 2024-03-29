@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>h1태그</h1>
+    <h2>h2태그</h2>
+    <h3>h3태그</h3>
+    
+    <script>
+
+        score(100, 98, 95)
+        score(98, 96, 94)
+        function score(a, b, c){
+            let aver
+            aver=(a+b+c)/3
+
+            console.log(aver)
+        }
+
+        let h1c
+        let h2c
+        let h3c
+        h1c=document.querySelector("h1")
+        h2c=document.querySelector("h2")
+        h3c=document.querySelector("h3")
+        h1c.style.color = "coral"
+        h2c.style.color = "blue"
+        h2c.style.margin = "50px"
+        h3c.style.border = "1px solid"
+        h3c.style.borderRadius = "30px"
+
+        //콜백함수 (이름없는 함수)
+        function aaa(sc1, sc2, function(){}){
+
+        }
+        function aaa(sc1, sc2, 함수)
+    </script>
+</body>
+</html>
