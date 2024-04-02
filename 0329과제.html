@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0329과제</title>
+</head>
+<body>
+    <div style="background-color: blue; width: 400px; height: 400px;">
+        <h1>파랑</h1>
+    </div>
+    <h2 style="background-color: brown; width: 400px; height: 400px">브라운</h2>
+    <script>
+        let button
+        let button2
+        button=document.querySelector("div")
+        button2=document.querySelector("h2")
+        button.addEventListener("mousedown", function(){
+            button.style.backgroundColor= "red"
+        })
+        button.addEventListener("mouseup", function(){
+            button.style.backgroundColor= "blue"
+        })
+        button2.addEventListener("mousedown", function(){
+            button2.style.backgroundColor= "blue"
+        })
+        button2.addEventListener("mouseup", function(){
+            button2.style.backgroundColor= "brown"
+        })
+    </script>
+    
+
+</body>
+</html>
