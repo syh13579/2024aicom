@@ -1,0 +1,15 @@
+.i {
+    font-style: italic;
+}
+.ii {
+    letter-spacing: 3px;
+    text-decoration: underline;
+}
+
+#h1 {
+    
+        font-family: "Noto Serif KR", serif;
+        font-weight: 400;
+        font-style: normal;
+    color: antiquewhite; text-shadow: 3px 3px 1px red; border: 3px black solid; text-align: center; width: 500px;
+}

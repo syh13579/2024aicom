@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        td {
+            width: 200px; height: 150px;
+            border: 3px dotted green;
+        }
+        table {
+            border: 5px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>
+            캡션
+        </caption>
+        <colgroup>
+            <col style="background-color: turquoise;">
+            <col>
+            <col style="background-color: brown;">
+        </colgroup>
+        <thead>
+        <tr>
+            <td>1번줄 1칸</td>
+            <th>1번줄 2칸</th>
+            <td>1번줄 3칸</td>
+        </tr>
+        </thead>
+        <tr>
+            <td>2번줄 1칸</td>
+            <td colspan="2" style="text-align: center;">2번줄 2칸</td>
+        </tr>
+        <tr>
+            <td rowspan="2">3번줄 1칸</td>
+            <td>3번줄 2칸</td>
+            <td>3번줄 3칸</td>
+        </tr>
+        <tr>
+            <td rowspan="2">4번줄 2칸</td>
+            <td>4번줄 3칸</td>
+        </tr>
+        <tr>
+            <td>5번줄 1칸</td>
+            <td>5번줄 3칸</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+</body>
+</html>

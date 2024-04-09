@@ -1,0 +1,14 @@
+h1 {padding: 20px; margin: 30px;}
+.main{ color: blue; background-color: aqua;}
+
+li{
+    list-style: none; border: 30px;
+    margin: 250px; background-color: blue;
+    text-align: center; color: aliceblue;
+    line-height: 120px;
+}
+p{
+    font-family: "Tac One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
