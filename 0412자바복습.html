@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+    .box {
+        background-color: green;
+    }
+</style>
+<body>
+    
+
+    <div class="box">박스</div>
+    
+
+
+    <script>
+
+
+        car(1, 5)
+        function car(a, b){
+            let end
+            end = a + b
+            console.log(end)
+        }
+
+
+        let a
+        a = 3
+        a = "구병윤"
+        a = function(){
+            let b
+            let c
+            console.log(b, c)
+        }
+
+
+        let 박스 = document.querySelector(".box")
+        박스.addEventListener("mouseover", function(){
+            console.log("마우스 클릭했음")
+        })
+        박스.addEventListener("mousedown", function(){
+            console.log("클릭했음")
+        })
+        
+        
+    </script>
+
+
+
+
+
+</body>
+</html>
