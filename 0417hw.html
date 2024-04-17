@@ -38,11 +38,21 @@
         let image
         image = document.querySelector("#img")
         let bt1
-        bt1 = document.querySelector("bt1")
+        bt1 = document.querySelector("#bt1")
         let bt2
-        bt2 = document.querySelector("bt2")
+        bt2 = document.querySelector("#bt2")
         let bt3
-        bt3 = document.querySelector("bt3")
+        bt3 = document.querySelector("#bt3")
+
+        bt1.addEventListener('click', () => {
+            image.setAttribute('src', '야스오.jpg')
+        })
+        bt2.addEventListener('click', () => {
+            image.setAttribute('src', 't세트.jpg')
+        })
+        bt3.addEventListener('click', () => {
+            image.setAttribute('src', '벨베스.jpg')
+        })
     </script>
 </body>
 </html>
