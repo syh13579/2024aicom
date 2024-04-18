@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .blue{
+            color: blue;
+        }
+        .margin{
+            margin: 20px;
+        }
+        .padding{
+            padding: 20px;
+        }
+        .radio{
+            
+        }
+        
+        .button{
+            background-color: blue;
+            color:white;
+            width: 150px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p style="font-size: 50px; color: blue;">회원가입 페이지</p>
+    
+    <form action="">
+        
+        <div class="padding" style="width: 400px; height: 300px; background-color: aquamarine;">
+            <h1 class="blue">로그인 정보</h1>
+            <p style="color: gray; font-size: 12px;">로그인에 사용할 ID와 비밀번호를 입력해 주세요.</p>
+            <hr>
+            <label for="">아이디 <br><input type="text" placeholder="최대 10자"></label>
+            <br>
+            <br>
+            <label for="">비밀번호 <br> <input type="password" placeholder="영어, 숫자 섞어서"></label>
+            <br>
+            <br>
+            <label for="">비밀번호 확인 <br> <input type="password" placeholder="영어, 숫자 섞어서"></label>
+            
+        </div>
+        <br>
+        <div class="padding" style="width: 400px; height: 500px; background-color: aquamarine;">
+            <h1 class="blue">개인정보</h1>
+            <p style="color: gray; font-size: 12px;">여러분의 개인정보를 입력해주세요.</p>
+            <hr>
+            <p>주소</p>
+            <label for=""> <input type="text" placeholder="ㅇㅇ구 ㅇㅇ동"></label>
+            <h3>연령대</h3>
+            <label for=""> <input type="radio" name="radio">10~19</label>
+            <label for=""> <input type="radio"name="radio">20~29</label>
+            <label for=""> <input type="radio"name="radio">30~39</label>
+            <label for=""> <input type="radio"name="radio">40~49</label>
+            <label for=""> <input type="radio"name="radio">50이상</label>
+            <h3>성별</h3>
+            <label for=""> <input type="radio" name="se">남</label>
+            <label for=""> <input type="radio" name="se">여</label>
+            <h3>취미</h3>
+            <label for=""><input type="checkbox">게임</label>
+            <label for=""><input type="checkbox">유튜브</label>
+            <label for=""><input type="checkbox">운동</label>
+            <br>
+            <label for=""><input type="checkbox">독서</label>
+            <label for=""><input type="checkbox">등산</label>
+            <label for=""><input type="checkbox">여행</label>
+            <label for=""><input type="checkbox">웹툰</label>
+        </div>
+        <br>
+        <div style="width: 400px; text-align: center;">
+            <button class="button" type="submit">회원 가입</button>
+            <button class="button" type="reset">다시 입력</button>
+        </div>
+    </form>
+
+
+
+
+
+
+</body>
+</html>
