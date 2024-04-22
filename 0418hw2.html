@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend style="font-size: 50px;">회원가입 페이지</legend>
+            <h1>로그인 정보</h1>
+            <label for="">ID 입력 <input type="text" placeholder="최대 10자"></label>
+            <br>
+            <label for="">PW 입력 <input type="password" placeholder="영어, 숫자 섞어서"></label>
+            <br>
+            <label for="">PW 확인 <input type="password" placeholder="영어, 숫자 섞어서" required></label>
+            <hr>
+            <h1>개인정보</h1>
+            <p>주소</p>
+            <input type="text">
+            <p>연령대</p>
+            10~19<input type="radio" name="radio">
+            20~29<input type="radio" name="radio">
+            30~39<input type="radio" name="radio">
+            40~49<input type="radio" name="radio">
+            50이상<input type="radio" name="radio">
+            <p>성별</p>
+            남<input type="radio" name="gen">
+            여<input type="radio" name="gen">
+            <p>취미</p>
+            게임<input type="checkbox">
+            유튭<input type="checkbox">
+            골프<input type="checkbox">
+            축구<input type="checkbox">
+            농구<input type="checkbox">
+            창작<input type="checkbox">
+            <p>이메일</p>
+
+            <label for=""><input type="email" placeholder="abcd@naver.com"></label>
+            <p>연락처</p>
+            <label for=""> <input type="text" placeholder="000-0000-0000"></label>
+            <p>생년월일</p>
+            <label for=""> <input type="date"></label>
+            <br>
+            <br>
+            <label for="">키(최소130 최대 195 기본 150 단위5) <input type="range" min="130" max="195" step="5" value="150"></label>
+            <br>
+            <br>
+            <label for="">사진 <input type="file"> </label>
+            <hr>
+            <button type="submit">회원 가입</button>
+            <button type="reset">다시 입력</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
