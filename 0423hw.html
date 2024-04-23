@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        .cent{
+            text-align: center;
+        }
+        img{
+            width: 100px;
+        }
+        .pad{
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="cent" style="margin: 0px;">주문페이지</h1>
+    <p class="cent" style="margin: 0px;">치킨 주문을 위한 페이지입니다. 정확한 내용을 기재 바랍니다.</p>
+
+<br>
+<form action="">
+    <div class="cent" style="border-radius: 10px; background-color: white; width: 800px;
+     margin-left: auto; margin-right: auto; padding: 1px; border: 2px black dashed;">
+        
+        <h2>메뉴 선택</h2>
+        <p>사진을 누르면 메뉴가 선택됨</p>
+        <label for="menu"><input type="radio" name="menu" value="a"><img src="/벨베스.jpg" alt="">벨베스</label>
+        <label for="menu"><input type="radio" name="menu" value="b"><img src="/t세트.jpg" alt="">세트</label>
+        <label for="menu"><input type="radio" name="menu" value="c">
+        <img style="border-radius: 50px;" src="/야스오.jpg" alt="">
+        야스오
+        <br><br>
+        </label>
+    <hr style="margin: 40px;">
+    <h2>사이드메뉴</h2>
+    <label for=""><input type="checkbox">치즈볼</label>
+    <label for=""><input type="checkbox">치킨무</label>
+    <label for=""><input type="checkbox">머스타드소스</label>
+    <label for=""><input type="checkbox">칠리소스</label>
+    <br><br><br>
+    <h2>선택사항</h2>
+    <label for=""><input type="checkbox">비닐장갑</label>
+    <label for=""><input type="checkbox">나무젓가락 제외</label>
+    <label for=""><input type="checkbox">치킨무 제외</label>
+    <label for=""><input type="checkbox">소스 제외</label>
+    <br>
+    <label for="">맵기(1~5) <input type="range" min="1" max="5" step="1" name="" id=""></label>
+    <br>
+    <label for="">소스양
+         <select name="" id="">
+            <option value="">많음</option>
+            <option value="">보통</option>
+            <option value="">적음</option>
+        </select>
+    </label>
+    <br><br>
+    <h2>기타 희망사항</h2>
+    <textarea name="" id="" cols="30" rows="10" style="margin: 10px;"></textarea>
+
+
+    </div>
+    <br>
+    <div style="margin-left: auto; margin-right: auto; background-color: white; width: 800px; border: black dashed 2px;
+    border-radius: 10px;">
+        <h1 class="cent" style="padding-top: 10px;">주문 정보</h1>
+        <p class="cent">주문자의 정보</p>
+        <label class="pad" for="">
+            주문자 성명<input type="text" placeholder="홍길동">
+        </label>
+        <br><br>
+        <label class="pad" for="">전화번호<input type="text" name="" id="" placeholder="000-0000-0000"></label>
+        <br><br>
+        <label class="pad" for="">주소<input type="text" name="" id="" placeholder="ㅇㅇ동 ㅇㅇ번지"></label>
+        <br><br>
+        <label class="pad" for="">쿠폰번호 <input type="text" name="" id="" placeholder="0000-0000-0000"></label>
+        <br><br>
+        <label class="pad" for="">도착날짜 <input type="date"></label>
+        <br><br>
+        <label class="pad" for=""><b style="font-size: 18px;">지불방법</b><input type="radio" name="way" id="">
+            카드</label>
+        <label for=""><input type="radio" name="way" id="">쿠폰</label>
+        <label for=""><input type="radio" name="way" id="">현금</label>
+        <br><br>
+        <label class="pad" for=""><b style="font-size: 18px;">카드사</b></label>
+        <label for=""><input type="radio" name="card" id="">신한</label>
+        <label for=""><input type="radio" name="card" id="">국민</label>
+        <label for=""><input type="radio" name="card" id="">카카오</label>
+        <br><br>
+        <label class="pad" for="">카드번호<input type="text" name="" id="" placeholder="000-0000-0000" style="margin-bottom: 30px;"></label>
+    </div>
+    <br>
+    <div style="width: 800px;
+     background-color: white; margin-left: auto; margin-right: auto; border-radius: 10px; border: 2px black dashed;">
+        <h1 class="cent">개인정보 수집 및 이용 동의</h1>
+        <p class="cent pad">주분정보를 저장하기 위해 회원의 개인정보를 수집하고 있으며, 수집에 동의하지 않으면 주문이 불가능합니다.</p>
+        <label class="pad" for=""><input type="radio" name="ox" id="">동의</label>
+        <label for=""><input type="radio" name="ox" id="">거절</label>
+        <br><br><br>
+    </div>
+    <div class="cent">
+        <br><br>
+        <button type="submit" style="width: 200px; height: 100px; border-radius: 10px; background-color: blue; font-size: 30px; color: white;">주문</button>
+        <button type="reset" style="width: 200px; height: 100px; border-radius: 10px; background-color: blue; font-size: 30px; color: white;">주문 취소</button>
+        
+    </div>
+</form>
+
+</body>
+</html>
