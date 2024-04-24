@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>IQ 테스트</h1>
+    <form action="">
+        <label for="">이름<input class="namee" type="text" name="" id=""></label>
+        <br><br>
+        <label for="">나이<input class="agee" type="text" name="" id=""></label>
+        <br><br>
+        <label for="">성별<input class="genderr" type="text" name="" id=""></label>
+        <br>
+        <br>
+        <button>제출</button>
+    </form>
+    <script>
+        let k
+        let name
+        name = document.querySelector(".namee")
+        let age
+        age = document.querySelector(".agee")
+        let gender
+        gender = document.querySelector(".genderr")
+        let butt
+        butt = document.querySelector("button")
+        butt.addEventListener("click", function(){
+            let Name = name.value
+            let Gender = gender.value
+            let Age = age.value
+            alert(`${Name}님 ${Age}살, ${Gender} 맞습니까?`)
+        })
+
+    </script>
+</body>
+</html>

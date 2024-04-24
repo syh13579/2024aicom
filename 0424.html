@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="/벨베스.jpg" width="500px" alt="">
+
+    <input type="text"> <button>데이터입력</button>
+
+
+    <script>
+        let n 
+        let im = document.querySelector("img")
+
+        n = im.getAttribute("width")
+
+        n = n + 100
+
+        console.log(n)
+        
+        let ip
+        ip = document.querySelector("input")
+
+        let butt = document.querySelector("button")
+        butt.addEventListener("click", function() {
+            let data = ip.getAttribute("value")
+
+            console.log(data)
+        })
+       
+    </script>
+</body>
+</html>
