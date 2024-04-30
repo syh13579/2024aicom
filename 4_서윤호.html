@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4_서윤호</title>
+
+
+    <style>
+        .but{
+            text-align: center;
+            border-radius: 5px;
+            width: 150px;
+            height: 50px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <form action="">
+        <div style="border: solid 2px gray; border-radius: 5px; margin: 30px; padding: 20px;">
+            <h1 style="color: gray;">|  자신의 프로필을 설정해주세요</h1>
+            <p style="color: gray;">각각의 항목에 정보를 입력해주세요</p>
+            <hr>
+            <br>
+            <b>성명</b>
+            <br>
+            <br>
+            <label for=""><input style="border: solid white 1px;; border-bottom: solid black 1px;" type="text" name="" id="" placeholder="성명 입력"></label>
+            <br><br>
+            <b>주소</b>
+            <br><br>
+            <label for=""><input style="border: solid white 1px;; border-bottom: solid black 1px;" type="text" name="" id="" placeholder="주소 입력"></label>
+            <br><br>
+            <b>연락처</b>
+            <br><br>
+            <label for=""><input style="border: solid white 1px;; border-bottom: solid black 1px;" type="text" name="" id="" placeholder="연락처 입력"></label>
+            <br><br>
+            <b>생년월일</b>
+            <label for="">연도 <input type="number" min="1900" max="2024" step="1" name="" id=""></label>
+    
+            <label for="">월 <input style="width: 100px;" type="number" min="1" max="12" step="1" name="" id=""></label>
+            <label for=""><input style="border: 1px white solid; border-bottom: 1px black solid; width: 80px;" type="text" name="" id="">일</label>
+            <br><br>
+            <b>성별</b>
+            <br><br>
+            <label for=""><input type="radio" name="gen" id="">남</label>
+            <label for=""><input type="radio" name="gen" id="">여</label>
+            <br><br>
+            <b>이메일</b>
+            <br>
+            <label for=""><input style="border: white 1px solid; border-bottom: 1px black solid;" type="text" name="" id="" placeholder="이메일 입력"></label>
+    
+    
+        </div>
+    </form>
+    <form action="">
+    <div style="border: solid 2px rgb(185, 174, 174); border-radius: 10px; padding: 14px; margin: 30px;">
+     <h1 style="color: rgb(129, 125, 125);"> <b>|</b>   자신을 소개해 주세요</h1>
+     <p style="color: gray;">아래의 물음에 답하세요</p>
+     <hr>
+     <br>
+     <b>가장 마음에 드는 문구를 고르세요</b>
+     <br><br>
+     <label for=""><input type="radio" name="moon" id="">어렵게 생각하지 말고 끝까지 하면 된다. 희망을 가지고 간절하게 하면 된다.</label>
+     <br><br>
+     <label for=""><input type="radio" name="moon" id="">신념을 가지면 어떤 어려움에도 흔들리지 않는다.</label>
+     <br><br>
+     <label for=""><input type="radio" name="moon" id="">"시계처럼 살아라." - 이는 시계처럼 꾸준히 가라는 것이다. 시계처럼 시간도 지켜라.</label>
+     <br><br>
+     <label for=""><input type="radio" name="moon" id="">인생도 건너뛰기가 없고 순간 나는 비약도 없다.</label>
+     <br><br><br>
+     <b>위 문구를 선택한 이유를 쓰세요</b>
+     <br><br>
+    <label for=""><textarea name="" id="" cols="100" rows="10" placeholder="500자 이내"></textarea></label>
+    <br>
+    <br>
+    <b>자신의 진로 분야를 선택하세요</b>
+    <br><br>
+    <label for=""><input type="checkbox" name="" id="">프론트엔드</label>
+    <label for=""><input type="checkbox" name="" id="">보안</label>
+    <label for=""><input type="checkbox" name="" id="">백엔드</label>
+    <label for=""><input type="checkbox" name="" id="">인공지능</label>
+    <label for=""><input type="checkbox" name="" id="">해커</label>
+    <label for=""><input type="checkbox" name="" id="">기타</label>
+    <br><br>
+    <b>개발자가 되기 위한 자신의 공부 우선 순위</b>
+    <br>
+    <label for="">1. <input style="border: white 1px solid; border-bottom: black 1px solid;" type="text" name="" id=""></label>
+    <label for="">2. <input style="border: white 1px solid; border-bottom: black 1px solid;" type="text" name="" id=""></label>
+    <label for="">3. <input style="border: white 1px solid; border-bottom: black 1px solid;" type="text" name="" id=""></label>
+    </div>
+    <br><br>
+    <div style="text-align: center;">
+    <button type="submit" class="but">제출</button>
+    <button type="reset" class="but">초기화</button>
+</div>
+</form>
+
+
+
+</body>
+</html>
