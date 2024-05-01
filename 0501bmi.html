@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BMI 테스트</h1>
+    <label for="">키<input class="input1" type="text" name="" id=""></label>
+    <br><br>
+    <label for="">체중<input class="input2" type="text" name="" id=""></label>
+    <br><br>
+    <button>계산</button>
+    <hr>
+    <h1>BMI 수치: <span></span></h1>
+    <script>
+        let but = document.querySelector("button")
+        let tall = document.querySelector(".input1")
+        let weight = document.querySelector(".input2")
+        but.addEventListener("click", function(){
+            let Tall = tall.value
+            let Weight = weight.value
+            let bmi = Weight*10000/Tall/Tall
+            console.log(bmi)
+            let Bmi = document.querySelector("span")
+        Bmi.textContent = bmi
+        })
+
+    </script>
+</body>
+</html>
