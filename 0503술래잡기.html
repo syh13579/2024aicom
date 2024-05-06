@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 200px; height: 40px; background-color: rgb(186, 179, 179);
+        }
+        div{
+            width: 200px; height: 200px; border: 1px solid black; display: inline-block; margin: 0px;
+            text-align: center;
+        }
+        img{
+            width: 100px; height: 100px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>마우스로 술래잡기</h1>
+
+        <button class="start">술래잡기 시작</button>
+        <button class="end">술래잡기 정지</button>
+        <br><br>
+        <div class="box1">
+            <h1 class="a">박스 1</h1>
+        </div>
+        <div class="box2">
+            <h1>박스2</h1>
+        </div>
+        <div class="box3">
+            <h1>박스3</h1>
+        </div>
+    <script>
+
+        let box1 = document.querySelector(".box1")
+        let box2 = document.querySelector(".box2")
+        let box3 = document.querySelector(".box3")
+        let start = document.querySelector(".start")
+        start.addEventListener("click", function(){
+            let img1 = document.createElement("img1")
+            img1.setAttribute("src", "/벨베스.jpg")
+            box1.appendChild(img1)
+        })
+    </script>
+        
+ 
+
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 200px; height: 200px; background-color: aqua;
+        }
+        .parent2{
+            width: 200px; height: 200px; background-color: blue;
+        }
+        .children{
+            color: aqua; font-weight: 900; font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+
+
+    <div class="parent">
+        div 박스
+    </div>
+    <br>
+    <div class="parent2">
+        div박스
+    </div>
+
+    <script>
+        let newtag
+        newtag = document.createElement("h2")
+
+        newtag.textContent = "안녕하세요"
+
+        let boxx = document.querySelector(".parent")
+        boxx.appendChild(newtag)
+
+        boxx.removeChild(newtag)
+        let boxx2 = document.querySelector(".parent2")
+        boxx2.appendChild(newtag)
+
+
+    </script>
+</body>
+</html>
