@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img{
+            width: 400px; height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>가고 싶은 해외여행지(a, s, d, f)</h1>
+    <div style="width: 700px; text-align: center; border: 2px solid black; padding: 20px;">
+        <img src="https://statics.vinpearl.com/%ED%95%B4%EC%99%B8%EC%97%AC%ED%96%89-23_1661590080.jpg" alt="">
+        <h1 class="wr"> aaaa </h1>
+    </div>
+    <script>
+        let img1 = document.querySelector("img")
+        let write = document.querySelector(".wr")
+        document.addEventListener("keydown", function(event){
+            console.log(event.key)
+            if (event.key == "a"){
+                img1.setAttribute("src", "https://www.hotelrestaurant.co.kr/data/photos/20190626/art_15615085052247_173474.jpg")
+                write.innerText="aaaa"
+            }
+            if (event.key == "s"){
+                img1.setAttribute("src", "https://file2.nocutnews.co.kr/newsroom/image/2017/08/07/20170807104451677250.jpg")
+                write.innerText="bbbb"
+            }
+            if (event.key == "d"){
+                img1.setAttribute("src", "https://www.kayak.co.kr/news/wp-content/uploads/sites/49/2018/03/Low-budget-destinations-Macau.jpg")
+                write.innerText="cccc"
+
+            }
+            if (event.key == "f"){
+                img1.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXbir2qqr_eDLhEekx5DOEtYEeg0wJw2iRXw&usqp=CAU")
+                write.innerText="dddd"
+
+            }
+           
+        })
+    </script>
+
+
+
+</body>
+</html>
