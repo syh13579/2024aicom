@@ -11,8 +11,49 @@
              border-radius: 20px; padding: 10px;
         }
         p{
-            display: inline-block; border: 2px solid gray; padding: 10px; border-radius: 15px;
+            display: inline-block; border: 2px solid gray; padding: 10px; border-radius: 15px; cursor: pointer;
         }
+        p:hover{
+            border: green 2px solid; color: green;
+        }
+        p:active{
+            border: 2px green solid; background-color: green; color: white;
+        }
+        section{
+            width: 1180px; height: 400px; background-color: white; border-radius: 15px;
+            margin-left: auto; margin-right: auto; padding: 20px; 
+        }
+        .div2{
+            margin: 0px; padding: 0px; margin-left: 20px;
+        }
+        .inline{
+            float: left;
+        }
+        .red::before{
+            content: "hot"; 
+            background-color: red; padding: 5px; border-radius: 7px; color: white; margin-right: 10px;
+        }
+        .new:before{
+            content: "new";
+            background-color: blue; padding: 5px; border-radius: 7px; color: white; margin-right: 10px;
+        }
+        .heart::before{
+            content: "❤️";
+            background-color: pink; padding: 5px; border-radius: 7px; margin-right: 10px;
+        }
+        td{
+            width: 230px; height: 25px; border: 2px black solid; padding: 5px;
+        }
+        table{
+            border: 2px solid black; border-collapse: collapse; margin-right: auto; margin-left: auto;
+        }
+        tr:nth-of-type(odd){
+            background-color: rgb(208, 208, 167);
+        }
+        img{
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body style="background-color: rgb(198, 194, 180); padding: 20px;">
@@ -26,6 +67,68 @@
         <p>접수 6월 8일</p>
 
 
+
+    </div>
+    <br><br>
+    <section>
+        <h3 style="text-align: center;">fsfsfsfsfsfsf</h3>
+        <div class="inline" style="width: 570px; height: 340px; background-color: rgb(190, 180, 180); border-radius: 15px;
+        margin: 0px; padding: 0px">
+            <h3 class="div2" style="padding-top: 20px;">sfsdfsdfsfsfs</h3>
+            <h2 class="div2">새겨둘 메세지</h2>
+            <ul>
+                <li class="red">sfsf</li>
+                <br>
+                <li class="red">sfsf</li>
+                <br>
+                <li class="new">sfsdfs</li>
+                <br>
+                <li class="red">dfdf</li>
+                <br>
+                <li class="heart">wrwr</li>
+                <br>
+                <li class="heart">bvbbc</li>
+            </ul>
+        </div>
+        <div class="inline" style="width: 570px; height: 340px; background-color: rgb(187, 172, 172); border-radius: 15px;
+        margin-left: 35px; padding: 0px;">
+            <h3 class="div2" style="padding-top: 20px;">sdfsdfsfsfs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <td>table 홀수 줄에 색깔 넣기</td>
+                        <td>table 홀수 줄에 색깔 넣기</td>
+                    </tr>
+                    <tr>
+                        <td>sfsfsfsfsfsf</td>
+                        <td>sdfsfsadfsadfsf</td>
+                    </tr>
+                    <tr>
+                        <td>sfsfsfsfsfsf</td>
+                        <td>sdfsfsadfsadfsf</td>
+                    </tr>
+                    <tr>
+                        <td>sfsfsfsfsfsf</td>
+                        <td>sdfsfsadfsadfsf</td>
+                    </tr>
+                    <tr>
+                        <td>sfsfsfsfsfsf</td>
+                        <td>sdfsfsadfsadfsf</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+    </section>
+
+    <br><br>
+    <div style="width: 1200px; height: 400px; background-color: white;
+    margin-left: auto; margin-right: auto; border-radius: 20px; padding: 10px;">
+        <h3 style="text-align: center;">section영역 ㄴㄹㄹㄴㄹㄴ</h3>
+
+        <div class="img1 inline" style="width: 350px; margin-left: 150px;"><img src="/t세트.jpg" alt=""><h5 style="margin-top: 5px;">세트</h5></div>
+        <div class="img2 inline" style="width: 350px;"><img src="/벨베스.jpg" alt=""><h5 style="margin-top: 5px;">벨베스</h5></div>
+        <div class="img3 inline" style="width: 350px;"><img src="/야스오.jpg" alt=""><h5 style="margin-top: 5px;">야스오</h5></div>
 
     </div>
 
