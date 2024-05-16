@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    p::before{
+        content: "best";
+        background-color: blueviolet; color: white;
+    }
+    p::selection{
+        background-color: green;
+    }
+    p::first-letter{
+        color: red;
+    }
+    p::first-line{
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <p>가상요소</p>
+    <p>sfsdfs</p>
+    <p>sfsdfsfs</p>
+    <p>sfsdfssf</p>
+    
+</body>
+</html>

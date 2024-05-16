@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let n
+        n = {
+            nname: "서윤호",
+            height: 180,
+            school: "동대부고",
+            weight: 80,
+            money: 10
+        }
+
+        let aJSON = JSON.stringify(n)
+        console.log(aJSON)
+
+        let bJSON = JSON.parse(aJSON)
+        console.log(bJSON)
+    </script>
+</body>
+</html>

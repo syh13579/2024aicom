@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .parent{
+        width: 500px; background-color: aqua;
+    }
+    .parent h1 {
+        color: gray;
+    }
+    section{
+        border: 1px solid black;
+    }
+    .parent > h1 {
+        background-color: brown;
+    }
+    h1:hover {
+        background-color: white;
+    }
+    h1:active{
+        background-color: blue;
+    }
+    .parent > h1:nth-child(even) {
+        text-decoration: underline;
+        color: violet;
+    }
+    .parent > h2:nth-of-type(2){
+        background-color: blueviolet;
+    }
+
+    input:focus{
+        border: 3px solid blue;
+    }
+</style>
+<body> 
+    <h1>선택자: 내가 원하는 태그를 선택하도록 도와주는 문자</h1>
+    <div class="parent">
+        <h1>박스 안 h1</h1>
+        <h2>h2</h2>
+        <h2>h2</h2>
+        <h2>h2</h2>
+        <h1>박스 안 h1</h1>
+        <h2>h2</h2>
+
+        <h1>박스 안 h1</h1>
+        <h1>박스 안 h1</h1>
+        <h2>h2</h2>
+        <h2>h2</h2>
+
+        <h1>박스 안 h1</h1>
+        <section>
+            <h1>섹션 내부의 h1</h1>
+        </section>
+    </div>
+    <br><br>
+
+    <input type="text" name="" id="" style="width: 300px; height: 100px;">
+    
+    
+</body>
+</html>
