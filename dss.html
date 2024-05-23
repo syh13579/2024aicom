@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo 리스트 프로젝트</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        * {
+    margin: 0; padding: 0; 
+    box-sizing: border-box;
+}
+
+header {
+    color: #FFF;
+    display: flex;
+    align-items: center; justify-content: space-between;
+    background: linear-gradient(to right, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px;
+}
+
+input { border: none; border-radius: 5px; padding: 5px;}
+
+.todo-list {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.like { flex: 1; color: rgb(235, 102, 140);}
+.content { flex: 8;}
+.manage {flex: 1;}
+.check {color: rgb(211, 37, 37);}
+.clear {color: rgb(32, 181, 77);}
+i{
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>Todo</h1>
+            <label>할일 입력 <input type="text"></label>
+        </header>
+
+        <section>
+>
+        </section>
+
+        <script>
+            let boxx = document.querySelector("input")
+            let sect = document.querySelector("section")
+            boxx.addEventListener("keyup", function(event){
+                if(event.key == "Enter"){
+
+                    console.log(boxx.value)
+
+                    let divbox = document.createElement("div")
+            divbox.classList.add("todo-list")
+            sect.appendChild(divbox)
+                    let ptag1 = document.createElement("p")
+                    let ptag2 = document.createElement("p")
+                    let vxdiv = document.createElement("div")
+                    vxdiv.classList.add("manage")
+                    ptag1.classList.add("like")
+                    ptag2.classList.add("content")
+                    ptag1.innerHTML = `<i class="material-icons">favorite_border</i>`
+                    let itag1 = document.createElement("i")
+                    let itag2 = document.createElement("i")
+                    itag1.classList.add("material-icons")
+                    itag2.classList.add("check")
+                    itag1.classList.add("clear")
+                    itag2.classList.add("material-icons")
+                    itag1.textContent = "check"
+                    itag2.textContent = "clear"
+                    ptag2.textContent = boxx.value
+                    divbox.appendChild(ptag1)
+                    divbox.appendChild(ptag2)
+                    vxdiv.appendChild(itag1)
+                    vxdiv.appendChild(itag2)
+                    divbox.appendChild(vxdiv)
+                    boxx.value =""
+                    itag1.addEventListener("click", function(){
+                        ptag2.style.color = "gray"
+                        ptag2.style.textDecoration = "line-through"
+                        itag1.style.visibility = "hidden"
+                    })
+
+                    itag2.addEventListener("click", function(){
+                        sect.removeChild(divbox)
+                    })
+                    let ptag = document.createElement("p")
+                    ptag.classList.add("like")
+                    let itag = document.createElement("i")
+                    itag.classList.add("material-icons")
+                    itag.textContent = "favorite_border"
+                    ptag.appendChild(itag)
+
+                    itag.addEventListener("click", function(){
+                        if(itag.textContent == "favorite"){
+                            itag.textContent = "favorite_border"
+                        }
+                        else{
+                            itag.textContent = "favorite"
+                        }
+                    })
+
+                    divbox.appendChild(ptag)
+                }
+            })
+
+           
+        </script>
+    </div>
+</body>
+</html>
