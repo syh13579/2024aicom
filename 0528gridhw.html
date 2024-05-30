@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0px; padding: 0px;
+        }
+        .con{
+            display: grid; gap: 20px; grid-template-columns: 300px 300px 300px; grid-template-rows: 300px 300px 300px;
+        }
+        .grid{
+            width: 260px; height: 260px; background-color: aqua;
+            background-image: url("/야스오.jpg");
+            background-size: cover;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.397);
+            padding: 20px; filter: brightness(50%);
+            display: flex; justify-content: center; align-items: center;
+            
+        
+        }
+        .grid:hover{
+            background-color: black;
+            filter: brightness(100%);
+        }
+        .white{
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <H1>그리드를 이용한 실습</H1>
+        <H3>각 박스 300px*300px</H3>
+    </div>
+    <hr><br><br>
+    <div class="con" style="margin-right: auto; margin-left: auto; width: 940px">
+        <div class="a grid"><h1 class="white">ㄹㄴㅇㄹㄴㄹㄴㅇㄹ</h1></div>
+        <div class="b grid"><h1 class="white">ㄴㄹㄴㅇㄹㄴㄹㄴㄹㄴㄹㄴㄹㄴㄻㄴㅇㄻㄴㄹㄴ</h1></div>
+        <div class="c grid"></div>
+        <div class="d grid"></div>
+        <div class="e grid"></div>
+        <div class="f grid"></div>
+        <div class="g grid"></div>
+        <div class="h grid"></div>
+        <div class="i grid"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>애국가 타자연습</h1>
+    <h3>타이핑을 하여 내용이 일치하면 ok 표시</h3>
+    <h3>od표시를 위한 태그는 span 사용 권장</h3>
+    <hr>
+    <h1>input 이벤트와 조건문을 활용</h1>
+    <h2>값을 입력하면 맞는지 점검함</h2>
+    <p>동해물과<input type="text" name="" id="동"><span class="a">X</span></p>
+    <p>백두산이<input type="text" name="" id="백"><span class="b">X</span></p>
+    <h1>키보드 이벤트 활용</h1>
+    <h2>Enter를 누르면 확인함 맞으면OK 틀리면X</h2>
+    <p>마르고<input type="text" name="" id="마"><span class="c">X</span></p>
+    <p>닳도록<input type="text" name="" id="닳"><span class="d">X</span></p>
+    <script>
+        let dong = document.querySelector("#동")
+        let baek = document.querySelector("#백")
+        let ma = document.querySelector("#마")
+        let dal = document.querySelector("#닳")
+        let first = document.querySelector(".a")
+        let second = document.querySelector(".b")
+        let third = document.querySelector(".c")
+        let fourth = document.querySelector(".d")
+        dong.addEventListener("input", (event) => {
+            console.log(event.data)
+
+            if(event.data == "동해물과"){
+                first.textContent="OK"
+            }
+            else{
+                first.textContent="X"
+            }
+        })
+        baek.addEventListener("input", (event) => {
+            console.log(event.data)
+
+            if(event.data == "백두산이"){
+                second.textContent="OK"
+            }
+            else{
+                second.textContent="X"
+            }
+        })
+        ma.addEventListener("keypress", (event) => {
+            if(event.key == "Enter"){
+                if(ma.value == "마르고"){
+                    third.textContent="OK"
+                }
+                else{
+                    third.textContent="X"
+                }
+            }
+        })
+        dal.addEventListener("keypress", (event) => {
+            if(event.key == "Enter"){
+                if(dal.value == "닳도록"){
+                    fourth.textContent="OK"
+                }
+            
+                else{
+                    fourth.textContent="X"
+                }
+            }
+        })
+    </script>
+</body>
+</html>
