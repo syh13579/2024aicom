@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>단위 변환</h1>
+    <h3>cm을 선택한 단위로 변환합니다</h3>
+    <input type="text" class="cm" >cm
+    <h3>변환</h3>
+    <div style="width: 200px; height: 20px; border: 1px solid black; display: inline-block;"><p class="result"
+        style="display: inline;"></p></div>
+    <select name="" id="" style="display: inline">
+        <option value="0.01" class="opt">
+            m
+        </option>
+        <option value="10" class="opt">mm</option>
+        <option value="0.4" class="opt">inch</option>
+    </select>
+
+    <script>
+        let selectt = document.querySelector("select")
+        let opt = document.querySelector(".opt")
+        let result = document.querySelector(".result")
+        let cm = document.querySelector(".cm")
+        selectt.addEventListener("change", (event) => {
+            console.log(event.target.value)
+            result.textContent = cm.value * event.target.value
+            
+        })
+
+        
+            
+    </script>
+</body>
+</html>
