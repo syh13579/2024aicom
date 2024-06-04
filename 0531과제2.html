@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .inline{
+        display: inline;
+    }
+</style>
+<body>
+    <h1>주문서</h1>
+    <h3>먹고 싶은 메뉴를 선택합니다</h3>
+
+    <label for=""><input type="checkbox" value = "16000" class="che1">치킨 16000</label><br><br>
+    <label for=""><input type="checkbox" value = "20000" class="che2">초밥 20000</label><br><br>
+    <label for=""><input type="checkbox" value = "5000" class="che3">순대 5000</label><br><br>
+
+
+    <hr>
+    <h1>가격: <span></span></h1>
+
+    <script>
+        let sum = 0
+        let che1 = document.querySelector(".che1")
+        let che2 = document.querySelector(".che2")
+        let che3 = document.querySelector(".che3")
+        let result = document.querySelector("span")
+        che1.addEventListener("change", () => {
+            if(che1.checked == true){
+                sum += Number(che1.value)
+            }
+            else{
+                sum -= Number(che1.value)
+            }
+            result.textContent = sum
+        })
+        che2.addEventListener("change", () => {
+            if(che2.checked == true){
+                sum += Number(che2.value)
+            }
+            else{
+                sum -= Number(che2.value)
+            }
+            result.textContent = sum
+
+        })
+        che3.addEventListener("change", () => {
+            if(che3.checked == true){
+                sum += Number(che3.value)
+            }
+            else{
+                sum -= Number(che3.value)
+            }
+            result.textContent = sum
+
+        })
+        
+
+    </script>
+</body>
+</html>
