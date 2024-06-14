@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        div{
+            width: 200px; height: 200px; background-color: aqua; margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>로또당첨번호</h1>   
+    <div class="box1"><h1 class="p1"></h1></div>
+    <div class="box2"><h1 class="p2"></h1></div>
+    <div class="box3"><h1 class="p3"></h1></div>
+    <div class="box4"><h1 class="p4"></h1></div>
+    <div class="box5"><h1 class="p5"></h1></div>
+    <div class="box6"><h1 class="p6"></h1></div>
+    <script>
+        let p1 = document.querySelector(".p1")
+        let p2 = document.querySelector(".p2")
+        let p3 = document.querySelector(".p3")
+        let p4 = document.querySelector(".p4")
+        let p5 = document.querySelector(".p5")
+        let p6 = document.querySelector(".p6")
+        let num
+        p1.textContent = Math.ceil(Math.random()*45)
+        let list = []
+        let list2 = [p1, p2, p3, p4, p5, p6]
+        list.push(Number(p1.textContent))     
+        for(let i=1; i<6; i++){
+            while(1){
+                num = Math.ceil(Math.random()*45)
+                if(list.includes(num)){
+                
+                }
+                else {
+                    list2[i].textContent = num
+                    list.push(num)
+                    break
+                }
+            }
+        }
+        console.log(list)
+   
+    </script>
+</body>
+</html>

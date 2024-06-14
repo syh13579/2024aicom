@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent1{
+            display: flex; justify-content: space-around;
+        }
+        img{
+            width: 400px; height: 250px;
+        }
+        .img2{
+            opacity: 0.4;
+            transition: all 0.5s linear;
+        }
+        .img1:hover + .img2{
+            opacity: 1; transform: translate(0px, -250px);
+        }
+        .parent2{
+            display: flex; justify-content: space-around;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">마우스 올리면 상세 설명 표시</h1>
+    <div class="parent1">
+        <img class="img1" src="/t세트.jpg" alt="">
+        <img class="img1" src="/t세트.jpg" alt="">
+        <img class="img1" src="/t세트.jpg" alt="">
+    </div>
+    <div class="parent2">
+        <img class="img2" src="/벨베스.jpg" alt="">
+        <img class="img2" src="/벨베스.jpg" alt="">
+        <img class="img2" src="/벨베스.jpg" alt="">
+    </div>
+    <h1 style="text-align: center;">팁</h1>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">
+
+const axios = require('axios');
+
+// 지정된 ID를 가진 유저에 대한 요청
+axios.get('/user?ID=12345')
+  .then(function (response) {
+    // 성공 핸들링
+    console.log(response);
+  })
+    console.log(response.data.main
+    )
+        습도지정.textContent = 습도
+
+        console.log(response.data.main.temp-273)
+        let 기온 = (response.data.main.temp-273).toFixed(2)
+    </script>
+
+    
+</body>
+</html>

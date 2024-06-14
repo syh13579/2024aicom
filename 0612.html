@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">
+
+        axios.get('https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={  47c44037a668e7569c5d4687b724255e  }')
+        .then(function (response) {
+            console.log(response)
+            document.write("기온:" , response.data.main.temp)
+            document.write("</br>풍속", response.data.wind)
+        })
+    </script>
+</body>
+</html>

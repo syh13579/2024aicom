@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text"><button>계산</button>
+    <script>
+        let num = document.querySelector("input")
+        let but = document.querySelector("button")
+        
+        but.addEventListener("click", function(){
+            let val = num.value
+            let list = val.split(".")
+            let year = list[0]
+            let month = list[1]
+            let date = list[2]
+            if(year <= 2004){
+                console.log("입대가능")ㅂㅂ
+            }
+            if(year == 2005){
+                if(month <= 5){
+                    console.log("입대가능")
+                }
+                if(month == 6){
+                    if(date >= 7){
+                        console.log("입대X")
+                    }
+                    if(date <= 6){
+                        console.log("입대가능")
+                    }
+                }
+                if(month >= 7){
+                    console.log("입대X")
+                }
+            }
+            if(year >= 2006){
+                console.log("입대x")
+            }
+        })
+    </script>
+</body>
+</html>

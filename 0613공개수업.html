@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        color: aqua;
+    }
+</style>
+<body>
+    <body>
+        <h1 class="k1"></h1>
+        <h1 class="k2"></h1>
+        <h1 class="k3"></h1>
+        <h1 class="k4"></h1>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        let k1 = document.querySelector(".k1")
+        let k2 = document.querySelector(".k2")
+        let k3 = document.querySelector(".k3")
+        let k4 = document.querySelector(".k4")
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=seoul&appid=47c44037a668e7569c5d4687b724255e`)
+    .then(function (response) {
+
+        k1.textContent = response.data.main.temp-273
+        
+    })
+    </script>
+</body>
+</html>
