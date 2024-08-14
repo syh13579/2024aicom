@@ -31,16 +31,39 @@
             display: flex;
         }
         h1{
-            font-size: 30px; padding: 20px; transition: border-bottom 1s ease-in-out;
+            font-size: 30px; padding: 20px; transition: all 0.5s ease-in-out;
         }
-        
+        h1:hover{
+            cursor: pointer; border-bottom: 3px solid purple;
+        }
+        .con{
+            display: grid; gap: 20px; grid-template-columns: 150px 150px 150px; grid-template-rows: 150px 150px 150px;
+        }
+        .grid{
+            cursor: pointer; overflow: hidden;
+        }
+        .grid2{
+
+        }
+        .img1{
+            width: 150px; height: 150px;
+        }
+        .img2{
+            width: 150px; height: 150px; opacity: ; transition: all 0.5s ease-in-out;
+        }
+        .img1:hover + .img2{
+            transform: translate(0px, -150px); opacity: 0.5;
+        }
+        h4{
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <div style="width: 1000px; border: 1px solid black; margin-left: auto; margin-right: auto;">
+    <div style="width: 1000px; margin-left: auto; margin-right: auto;">
         <div class="flex">
             <p class="top">공지사항 안내</p>
-            <div class="right">
+            <div class="right">z
                 <p class="top">로그인</p>
                 <p class="top">회원가입</p>
                 <p class="top">고객센터</p>
@@ -59,7 +82,7 @@
             </div>
             <input type="text" placeholder="검색어 입력">
             <button style="background-color: purple; color: white; padding: 20px; border-radius: 100px; width: 100px; margin-left: 20px;">
-                <h2>검색</h2>
+                <h2 style="cursor: pointer;">검색</h2>
             </button>
         </div>
         <div class="flex2">
@@ -70,6 +93,39 @@
             <h1>TEEN</h1>
             <h1>초이스</h1>
         </div>
+    </div>
+    <hr>  
+    <br><br>
+    <div style="width: 1000px; margin-right: auto; margin-left: auto; display: flex;">
+        <div class="con">
+            <div class="grid"><img class="img1" src="/벨베스.jpg" alt=""><img class="img2" src="/야스오.jpg" alt=""></div>
+            <div class="grid"><img class="img1" src="/벨베스.jpg" alt=""><img class="img2" src="/야스오.jpg" alt=""></div>
+            <div class="grid"><img class="img1" src="/벨베스.jpg" alt=""><img class="img2" src="/야스오.jpg" alt=""></div>
+            <div class="grid"><img class="img1" src="/벨베스.jpg" alt=""><img class="img2" src="/야스오.jpg" alt=""></div>
+            <div class="grid"><img class="img1" src="/벨베스.jpg" alt=""><img class="img2" src="/야스오.jpg" alt=""></div>
+            <div class="grid"><img class="img1" src="/벨베스.jpg" alt=""><img class="img2" src="/야스오.jpg" alt=""></div>
+            <div class="grid2" style="grid-column: 1/4;">
+                <h4 style="font-size: 30px;">실시간차트</h4>
+                <h4 style="margin-top: 0px;">1. never ending story</h4>
+                <hr style="margin-bottom: 0px;">
+                <h4>2. You</h4>
+                <hr style="margin-bottom: 0px;">
+                <h4>3.Rio Funk</h4>
+                <hr>
+            </div>
+        </div>
+        <div style="width: 500px; height: 500px; margin-left: 10px;">
+            <img src="/벨베스.jpg" style="width: 500px; height: 500px;" alt="">
+            <h2 style="background-color: white; transform: translate(0, -505px); width: 100px; margin-left: 20px; padding: 20px;">1 TOP</h2>
+        </div>
+    </div>
+    <br><br>
+    <div style="width: 100%; background-color: gray; color: white; height: 250px; padding-left: 250px; padding-top: 20px;">
+        <h4>본 사이트는 상업적 목적이 아닌 개인 포트폴리오로 제작되었습니다</h4>
+        <h4>주소 | 서울특별시 동대문구 장안벚꽃로 107 </h4>
+        <h4>전화 | 010-3161-9432</h4>
+        <h4>학과 소개 | 교육과정 | 학과생활 | 진로안내 | 활동영상</h4>
+        <h4>Copuright (c) 종로산업정보학교 AIcomputer Department 서윤호 All rights reserved</h4>
     </div>
 </body>
 </html>

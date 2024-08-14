@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px; height: 500px; border: 1px solid black; display: inline-block; margin-right: 100px;
+            margin-bottom: 100px;
+        }
+        img{
+            width: 200px; height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Shopping Cart</h1>
+    <p>sffsfsfsf</p>
+    <p>sffsfsfsf</p>
+    <div class="box"><h1>야스오 1마리</h1><img src="/야스오.jpg" alt=""><p>price</p><p class="pri">20000</p><br>quanity<input class="qua" type="number"></div>
+    <div class="box"><h1>벨베스 1마리</h1><img src="/벨베스.jpg" alt=""><p>price</p><p class="pri">10000</p><br>quanity<input class="qua" type="number"></div>
+    <br>
+    <div class="box"><h1>세트 국밥</h1><img src="/t세트.jpg" alt=""><p>price</p><p class="pri">13000</p><br>quanity<input class="qua" type="number"></div>
+    <div class="box"><h1>야스오 감자탕</h1><img src="/야스오.jpg" alt=""><p>price</p><p class="pri">17000</p><br>quanity<input class="qua" type="number"></div>
+    <h1>Total: <span id="total"></span></h1>
+    <script>
+        const allbox = document.querySelectorAll(".box")
+        const inputt = document.querySelectorAll("input")
+
+        inputt.forEach(input => {
+            input.addEventListener("input", () => {
+                let total = 0;
+
+                allbox.forEach(box => {
+                    const pri = parseInt(box.querySelector('.pri').textContent);
+                    const qua = parseInt(box.querySelector(".qua").value) || 0
+                    console.log(qua)
+
+                    total += pri * qua
+                    console.log(total)
+                })
+
+                document.getElementById("total").textContent = total
+            })
+        })
+    </script>
+</body>
+</html>
