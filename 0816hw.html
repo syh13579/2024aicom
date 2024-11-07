@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            text-align: center;
+        }
+        span{
+            font-size: 90px;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="display: inline;">시간 설정</h3>
+    <input class="input" type="text" name="" id=""><h3 style="display: inline;">초</h3>
+    <button class="start">시작</button> <button class="stop">정지</button>
+    <br><br>
+    <h1>남은 시간</h1>
+
+    <h2><span></span>s</h2>
+
+    <script>
+        let start = document.querySelector(".start")
+        let stop = document.querySelector(".stop")
+        let inputt = document.querySelector(".input")
+        let spann = document.querySelector("span")
+        let setInterval함수
+        let setInterval함수2
+            start.addEventListener("click", () => {
+                let value = parseInt(inputt.value) + 1
+                clearInterval(setInterval함수)
+                clearInterval(setInterval함수2)
+                let setInterval에넣을함수 = function() {
+                    value = value - 1
+                }
+                let setInterval2에넣을함수 = function() {
+                    spann.textContent = value
+                }
+                console.log(value)
+                if(value < 0){
+                    spann.textContent = 0
+                }
+                setInterval함수 = setInterval(setInterval에넣을함수, 1000)
+                setInterval함수2 = setInterval(setInterval2에넣을함수, 1000)
+                stop.addEventListener("click", () => {
+                    clearInterval(setInterval함수)
+                    clearInterval(setInterval함수2)
+                })
+            })
+        
+        
+    </script>
+</body>
+</html>

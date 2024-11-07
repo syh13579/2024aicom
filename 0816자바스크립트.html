@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>일정 시간 마다 함수 코드를 실행하는 것(주기적)</h1>
+    <h1>일정 시간 뒤에 함수 코드를 실행하는 것(타이머가 완료되면 실행)</h1>
+
+    <script>
+        let setInterval에넣을함수 = function() {
+            console.log("sdfsfs")
+        }
+
+        let setInterval함수 = setInterval(setInterval에넣을함수, 1000)
+
+        clearInterval(setInterval함수)
+
+
+        let setTimeout함수 = setTimeout(function() {
+            alert("3초 지남")
+        }, 3000)
+        clearTimeout(setTimeout함수)
+    </script>
+</body>
+</html>
